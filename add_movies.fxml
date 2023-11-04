@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieticket.addmoviescontroller">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="900.0" styleClass="top-form" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="32.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-14.0" prefHeight="32.0" prefWidth="1072.0" styleClass="top-form" stylesheets="@design2.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button layoutX="994.0" layoutY="2.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" styleClass="close" stylesheets="@design2.css" AnchorPane.rightAnchor="21.199999999999818" AnchorPane.topAnchor="2.0" />
+                        <Button layoutX="948.0" layoutY="1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="42.0" styleClass="minimise" stylesheets="@design2.css" AnchorPane.rightAnchor="67.19999999999993" AnchorPane.topAnchor="1.0" />
+<!--                        <FontAwesomeIconView glyphName="CLOSE" layoutX="1008.0" layoutY="21.0" size="1.22em" text="" AnchorPane.rightAnchor="38.128571128845124" AnchorPane.topAnchor="8.485713005065918" />-->
+<!--                        <FontAwesomeIconView glyphName="MINUS" layoutX="968.0" layoutY="19.0" size="`.2em" text="" />-->
+                        <Label layoutX="24.0" layoutY="8.0" text="Movie Ticket Booking Management System ">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="13.0" />
+                           </font>
+                        </Label>
+<!--                        <FontAwesomeIconView fill="#fb6363" glyphName="PLAY" layoutX="8.0" layoutY="20.0" />-->
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@design2.css" BorderPane.alignment="CENTER">
+               <children>
+<!--                  <FontAwesomeIconView fill="#ececec" glyphName="USER" layoutX="70.0" layoutY="111.0" size="7EM" />-->
+                  <Label layoutX="63.0" layoutY="123.0" text="Welcome" textFill="#d7d7d7">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" layoutX="70.0" layoutY="158.0" prefHeight="27.0" prefWidth="54.0" text="Admin" textFill="#fafafa">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="dashboard_form" layoutX="12.0" layoutY="258.0" mnemonicParsing="false" onAction="#dashh" prefHeight="35.0" prefWidth="175.0" styleClass="nav-btn" stylesheets="@design2.css" text="Dashboard" />
+                  <Button fx:id="addmovies_form" layoutX="12.0" layoutY="293.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="175.0" styleClass="nav-btn" stylesheets="@design2.css" text="Add Movies" />
+                  <Button fx:id="availablemovies_form" layoutX="12.0" layoutY="328.0" mnemonicParsing="false" onAction="#available" prefHeight="35.0" prefWidth="175.0" styleClass="nav-btn" stylesheets="@design2.css" text="Available Movies" />
+                  <Button fx:id="editscreen_form" layoutX="12.0" layoutY="363.0" mnemonicParsing="false" onAction="#edit" prefHeight="35.0" prefWidth="175.0" styleClass="nav-btn" stylesheets="@design2.css" text="Edit Screening" />
+                  <Button fx:id="customer_form" layoutX="12.0" layoutY="398.0" mnemonicParsing="false" onAction="#customer" prefHeight="35.0" prefWidth="175.0" styleClass="nav-btn" stylesheets="@design2.css" text="Customer" />
+                  <Button fx:id="sign_out" layoutX="15.0" layoutY="620.0" mnemonicParsing="false" onAction="#out" prefHeight="26.0" prefWidth="26.0" styleClass="signout" stylesheets="@design2.css" />
+<!--                  <FontAwesomeIconView fill="WHITE" glyphName="SIGN_OUT" layoutX="18.0" layoutY="639.0" text="" wrappingWidth="12.742833137512207" />-->
+                  <Label layoutX="43.0" layoutY="626.0" text="Sign Out" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="88.0" fitWidth="106.0" layoutX="53.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@user-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="32.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@files+folder+icon-1320196394707568948.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="28.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@plus-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="17.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@play-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="22.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="28.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@dmins-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="18.0" fitWidth="19.0" layoutX="19.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@sd-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+<!--                  <FontAwesomeIconView fill="WHITE" glyphName="DASHBOARD" layoutX="23.0" layoutY="282.0" size="1.5em" />-->
+<!--                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="24.0" layoutY="317.0" size="1.5em" text="" />-->
+<!--                  <FontAwesomeIconView fill="WHITE" glyphName="EDIT" layoutX="23.0" layoutY="387.0" size="1.5em" text="" />-->
+<!--                  <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="21.0" layoutY="422.0" size="1.5em" />-->
+<!--                  <FontAwesomeIconView fill="WHITE" glyphName="PLAY_CIRCLE" layoutX="24.0" layoutY="353.0" size="1.5em" text="" />-->
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="add_movies" layoutX="52.0" layoutY="190.0" prefHeight="686.0" prefWidth="895.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-37.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane layoutX="7.0" layoutY="13.0" prefHeight="642.0" prefWidth="243.0" styleClass="add-textfield">
+                           <children>
+                              <AnchorPane layoutX="59.0" layoutY="30.0" prefHeight="150.0" prefWidth="0.0" styleClass="bg-white" stylesheets="@design2.css">
+                                 <children>
+                                    <ImageView fitHeight="136.0" fitWidth="97.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@WhatsApp Image 2023-10-30 at 15.18.40_4aa834e4.jpg" />
+                                       </image></ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <Button layoutX="86.0" layoutY="189.0" mnemonicParsing="false" styleClass="insert-btn" stylesheets="@design2.css" text="Import" />
+                              <Label layoutX="17.0" layoutY="253.0" text="Movie Title:">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="m_titlee" layoutX="94.0" layoutY="250.0" prefHeight="26.0" prefWidth="122.0" styleClass="add-textfield" stylesheets="@design2.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
+                              <Label layoutX="44.0" layoutY="289.0" text="Genre:" AnchorPane.leftAnchor="39.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="g_nreee" layoutX="96.0" layoutY="285.0" prefHeight="26.0" prefWidth="122.0" styleClass="add-textfield" stylesheets="@design2.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
+                              <Label layoutX="31.0" layoutY="324.0" prefHeight="19.0" prefWidth="78.0" text="Duration:" AnchorPane.leftAnchor="39.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="t_iming" layoutX="94.0" layoutY="321.0" prefHeight="26.0" prefWidth="122.0" styleClass="add-textfield" stylesheets="@design2.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
+                              <Label layoutX="14.0" layoutY="360.0" prefHeight="19.0" prefWidth="122.0" text="Published Date:" AnchorPane.leftAnchor="2.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="p_dattttesss" layoutX="94.0" layoutY="357.0" prefHeight="26.0" prefWidth="122.0" styleClass="add-textfield" stylesheets="@design2.css">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></TextField>
+                              <Button fx:id="btn_insert" layoutX="16.0" layoutY="402.0" mnemonicParsing="false" onAction="#insertion" prefHeight="42.0" prefWidth="82.0" styleClass="insert-btn" stylesheets="@design2.css" text="Insert" />
+                              <Button fx:id="btn_delete" layoutX="128.0" layoutY="402.0" mnemonicParsing="false" onAction="#deletion" prefHeight="42.0" prefWidth="82.0" styleClass="delete-btn" stylesheets="@design2.css" text="Delete" />
+                              <Button fx:id="btn_clear" layoutX="68.0" layoutY="483.0" mnemonicParsing="false" onAction="#clearing" prefHeight="42.0" prefWidth="82.0" styleClass="clear-btn" stylesheets="@design2.css" text="Clear" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="275.0" layoutY="13.0" prefHeight="642.0" prefWidth="551.0" styleClass="bg-white" stylesheets="@design2.css">
+                           <children>
+                              <TableView fx:id="tableview" layoutX="2.0" layoutY="7.0" prefHeight="620.0" prefWidth="545.0" styleClass="column-header-background" stylesheets="@design2.css">
+                                 <columns>
+                                    <TableColumn fx:id="MovieTitle" prefWidth="179.20001220703125" text="Movie Title" />
+                                    <TableColumn fx:id="Genre" prefWidth="105.60003662109375" text="Genree" />
+                                    <TableColumn fx:id="Duration" prefWidth="123.99993896484375" text="Durations" />
+                                    <TableColumn fx:id="datess" prefWidth="132.80001220703127" text="Published_Date" />
+                                 </columns>
+                              </TableView>
+<!--                              <FontAwesomeIconView glyphName="SEARCH" layoutX="14.0" layoutY="33.0" size="1.4em" wrappingWidth="15.59999942779541" />-->
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
